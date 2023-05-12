@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+    <h2>{{ course.name }}</h2>
+    <h2>{{ course.description }}</h2>
+    <div>
+        <a href="{% url 'courses' %}">Back</a>
+    </div>
+    <a href="{% url 'edit-course' course.id %}">Edit</a>
+{% endblock content %}

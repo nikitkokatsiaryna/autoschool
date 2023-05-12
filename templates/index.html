@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autoschool</title>
+
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div>
+            {% include 'navbar.html' %}
+        </div>
+            {% block content %}{% endblock %}
+    </div>
+</div>
+</body>
+</html>

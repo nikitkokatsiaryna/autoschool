@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'courses',
+    'users',
     'bootstrap5',
 
 ]
@@ -83,7 +84,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'autoschool',
-        'USER': 'autoschool_user',
+        # 'USER': 'autoschool_user',
+        'USER': 'katya.nikitko',
         'PASSWORD': '111',
         'HOST': 'localhost',
         'PORT': '',
